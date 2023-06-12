@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.oder_btn {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  background-color: rgba(112, 76, 43, 0.6);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+.headerSlogan {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.headerSlogan video {
+  position: absolute;
+  width: 100%;
+  top: -40%;
+}
+.headerSlogan .solgan {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  bottom: 0;
+}
+.headerBar {
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.headerBar div {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+.header_icon {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header_icon .header_menu_line {
+  position: relative;
+  height: 2px;
+  width: 70%;
+}
+.header_icon .header_menu_line .line {
+  position: absolute;
+  left: 0%;
+  width: 25%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: #464646;
+}
+.headerBar .header_icon .header_menubar {
+  width: 70%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+.headerBar .header_icon .header_menubar > div {
+  width: 25%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_img {
+  height: 100%;
+}
+.mainCover {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: hidden;
+}
+.mainCover .mainsidecontent {
+  width: 20%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainCover .mainsidecontent .main_itu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+.mainCover .maincontent {
+  font-size: 50px;
+  width: 80%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
+.slide_btn {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  border-radius: 50px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6d6d6d;
+  cursor: pointer;
+  transition: 0.3s all;
+  font-size: 30px;
+}
+.slide_btn:hover {
+  font-size: 35px;
+}
+.slide_left_btn {
+  left: 2%;
+}
+.slide_right_btn {
+  right: 2%;
+}
+.mainCover .maincontent .maincontent_wrap {
+  position: absolute;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+}
+.mainCover .maincontent .maincontent_wrap .maincon {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+.sub_header {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sub_header .cafeMenu_header {
+  width: 100%;
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sub_header .cafeMenu_header .cafeMenu_title {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.sub_header .cafeMenu_header .cafeMenu_menu {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub_content {
+  width: 100%;
+  height: 330%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sub_con {
+  border: 1px solid #464646;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+/* .sub_con1 {
+  display: flex;
+} */
+.cafeMenu_list {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cafeMenu_list .row {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 0 4px;
+}
+.cafeMenu_list .row .column {
+  float: left;
+  width: 20%;
+  padding: 30px;
+}
+.cafeMenu_list .row .column .card {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+.cafeMenu_list .row .column .card .image {
+  width: 100%;
+  overflow: hidden;
+}
+.cafeMenu_list .row .column .card .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+.cafeMenu_list .row .column .card:hover .image img {
+  opacity: 0.3;
+  transform: translateX(30%); /*100%*/
+}
+.cafeMenu_list .row .column .card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /*100%*/
+  height: 100%;
+  background: rgb(255, 255, 255);
+  transition: 0.5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cafeMenu_list .row .column .card .details .details_wrap {
+  width: 50%;
+  height: 40%;
+  color: #464646;
+  font-size: 0.7em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cafeMenu_list .row .column .card .details button {
+  width: 50%;
+  height: 10%;
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: auto;
+  padding-right: auto;
+  transition: 0.3s all;
+}
+.cafeMenu_list .row .column .card .details button:hover {
+  padding-left: 15%;
+}
+.cafeMenu_list .row .column .card:hover .details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+.musinsa_contact {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.musinsa_contact .musinsa_contact_wrap {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_input {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_input .contact_textarea {
+  width: 80%;
+  height: 80%;
+  display: none;
+  flex-direction: column;
+}
+.musinsa_contact
+  .musinsa_contact_wrap
+  .contact_input
+  .contact_textarea
+  textarea {
+  width: 100%;
+  height: 80%;
+  resize: none;
+  outline: none;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_input .contact_textarea button {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  color: white;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_input input {
+  width: 80%;
+  height: 10%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #c2c2c2;
+  padding-left: 1%;
+  text-align: center;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_input span {
+  font-weight: normal;
+  font-size: 0.8em;
+  margin-bottom: 2%;
+}
+.musinsa_contact .musinsa_contact_wrap .contact_icon {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+}
+footer .musinsa_info {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .musinsa_info div {
+  width: 33.333%;
+  height: 50%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .musinsa_info .musinsa_adress2,
+.musinsa_adress1 {
+  border-right: 1px solid #c2c2c2;
+}
+footer .musinsa_info div span {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+footer .musinsa_info div p {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #6d6d6d;
+}
+footer .musinsa_copyright {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+}
